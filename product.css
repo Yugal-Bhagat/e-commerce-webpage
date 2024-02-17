@@ -1,0 +1,148 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 60px;
+    background-color: rgb(2, 44, 46);
+    color: #ffffff;
+}
+
+ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+ul li {
+    list-style: none;
+    padding: 5px;
+
+}
+
+ul li:hover {
+    border-bottom: 2px solid yellow;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+input {
+    width: 700px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+}
+
+input:hover {
+    border: 4px solid yellow;
+}
+
+.card {
+    position: relative;
+
+    height: 450px;
+    width: 350px;
+    background-color: rgba(1, 25, 1, 0.718);
+    margin: 10px auto;
+    border: 3px solid rgb(142, 142, 18);
+    border-radius: 9px;
+    background: #e0e0e0;
+    box-shadow: 14px 14px 23px #797979,
+        -14px -14px 23px #ffffff;
+
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+.card1 {
+    margin: 15px;
+    
+}
+
+.card img {
+    height: 300px;
+    width: 320px;
+    margin-top: 5px;
+
+}
+
+.buy {
+    justify-content: space-between;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 15px;
+
+}
+
+button {
+    padding: 10px 15px;
+    background-color: rgb(174, 174, 37);
+    border: none;
+    margin-left: 130px;
+    cursor: pointer;
+    box-shadow: 0px 0px 16px 0px gray;
+    border-radius: 9px;
+    background: #e0e0e0;
+    box-shadow: 8px 8px 16px #898989,
+        -8px -8px 16px #ffffff;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.foot {
+    background-color: #096467;
+     display: flex;
+    justify-content: space-around;
+}
+
+.foot p {
+    padding-top: 20px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.brand {
+    /* background-color:#212529; */
+    padding: 14px 20px;
+    position: relative;
+    color:#fff;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 5px;
+}
+
+.brand::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#096467;
+    animation: showright 2s ease infinite forwards;
+    animation-delay: .5s;
+
+}
+
+@keyframes showright {
+
+    100% {
+        width: 0;
+    }
+}

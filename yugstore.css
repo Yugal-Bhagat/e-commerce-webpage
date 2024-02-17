@@ -1,0 +1,287 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+--fristcolor:#495057;
+--secondcolor:#212529;
+--thirdcolor:#fff;
+--fourthcolor:#adb5bd;
+--fifthcolor:#343a40;
+--sixcolor:#414833;
+--sevencolor:#656d4a;
+
+}
+header{
+position: sticky;
+    top: 0;
+    z-index: 2;
+
+}
+nav {
+    background-color:var(--fristcolor);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+ 
+}
+
+ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+ul li {
+    margin: 0 70px;
+    list-style: none;
+
+}
+
+ul li:hover {
+    border: 2px solid var(--secondcolor);
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+ul li a {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+    top: 50%;
+    margin: 0 20px;
+    color:var(--secondcolor);
+}
+
+ul li i {
+    color: var(--secondcolor);
+    font-size: 1.3rem;
+    margin-left: 10px;
+    margin-right: -15px;
+}
+
+ul li:first-child i {
+    position: relative;
+    bottom: 2.5px;
+}
+
+.brand {
+    background-color:var(--secondcolor);
+    padding: 14px 20px;
+    position: relative;
+    color: var(--fourthcolor);
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 5px;
+}
+
+.brand::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondcolor);
+    animation: showright 2s ease infinite forwards;
+    animation-delay: .5s;
+
+}
+
+@keyframes showright {
+
+    100% {
+        width: 0;
+    }
+}
+
+.hero-image {
+    background: url('https://media.istockphoto.com/id/1201699822/photo/help-of-technology-in-delivery-business.jpg?s=2048x2048&w=is&k=20&c=CJ-QjAtUGsLibOafahtew3tDE2tLnpOYqxLhqy30vrI=');
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* opacity: 0.8; */
+    margin: 0 15px;
+    position: relative;
+}
+
+.hero-contant {
+    width: 400px;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    color:var(--fifthcolor) ;
+}
+
+.hero-contant h1 {
+    font-size: 3rem;
+}
+
+.hero-contant p {
+    line-height: 2;
+    font-size: 1.1rem;
+
+}
+
+.hero-info {
+    width: 90%;
+    position: absolute;
+    bottom: 20px;
+    background-color: var(--thirdcolor);
+    color: var(--fifthcolor);
+    padding: 10px;
+    text-align: center;
+    margin-left: 5%;
+}
+
+.hero-about {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 400px;
+    padding-top: 30px;
+    margin-top: 30px;
+    color: var(--fifthcolor);
+
+}
+
+.about {
+    width: 300px;
+    line-height: 2.5;
+    letter-spacing: 1px;
+    color: var(--sixcolor);
+
+}
+
+.about p {
+    line-height: 1.7;
+    color: var(--sevencolor);
+
+}
+
+.about img {
+    width: 100px;
+
+}
+
+.hero-design h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--fifthcolor);
+    
+}
+
+.hero-design p {
+    height: 250px;
+    border: 2px solid rgb(233, 230, 230);
+    margin: 50px 70px;
+    padding: 20px;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    color: rgba(14, 91, 91, 0.709);
+
+}
+
+.hero-design p:hover {
+    border-radius: 0px;
+    box-shadow: 0px 0px 15px 0px gray;
+    transform: scale(1.002);
+}
+
+footer {
+    background-color:var(--secondcolor);
+
+}
+
+.footpanel {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.footpanel p {
+    /* color: #c2c5aa; */
+    color:#6c757d;
+    font-weight: 600;
+}
+
+.foot {
+    padding: 30px;
+    line-height: 2;
+    letter-spacing: 2px;
+}
+
+footer a {
+    display: block;
+    text-decoration: none;
+    color:var(--thirdcolor);
+}
+
+footer a:hover {
+    color: var(--fristcolor);
+}
+
+.foot-line {
+    height: 2px;
+    background-color: gray;
+    opacity: 0.5;
+}
+
+.foot-base {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    font-size: 18px;
+    color: var(--thirdcolor);
+}
+
+.footpanel .brand {
+    margin-top: 70px;
+}
+
+.foot-base1 i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid;
+    font-size: 25px;
+    display: grid;
+    place-items: center;
+    margin-right: 30px;
+
+}
+
+.foot-base1 i:hover {
+    background-color: var(--thirdcolor);
+    color: var(--secondcolor);
+}
+
+.foot-base1 {
+    display: flex;
+}
+
+.foot-base2 span {
+    padding-right: 30px;
+}
+.chat-box {
+    height: 80px;
+    width: 100px;
+    border: 2px solid gray;
+    background-color: #6b705c;
+    color: var(--secondcolor);
+    font-size: 4rem;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
